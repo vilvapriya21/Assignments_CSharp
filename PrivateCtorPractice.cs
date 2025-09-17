@@ -22,6 +22,10 @@ namespace Assignment
         {
             return $"Employee ID: {id}, Name: {name}";
         }
+        public static int EmployeeCount()
+        {
+            return employeeCount;
+        }
     }
     class MyClass
     {
@@ -29,6 +33,8 @@ namespace Assignment
         {
             Employee e=Employee.AddEmployee(11, "abcde");
             Console.WriteLine(e);
+            Employee e1 = Employee.AddEmployee(11, "abcde");
+            Console.WriteLine(Employee.EmployeeCount());
         }
     }
 }
