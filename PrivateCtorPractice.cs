@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
 
 namespace Assignment
 {
@@ -17,17 +12,23 @@ namespace Assignment
             this.id = id;
             this.name = name;
         }
-        public static void AddEmployee(int id,string name)
+        public static Employee AddEmployee(int id,string name)
         {
             employeeCount++;
-            new Employee(id, name);
+            Employee e=new Employee(id, name);
+            return e;
+        }
+        public override string ToString()
+        {
+            return $"Employee ID: {id}, Name: {name}";
         }
     }
     class MyClass
     {
         static void Main()
         {
-            Employee.AddEmployee(11, "abcde");
+            Employee e=Employee.AddEmployee(11, "abcde");
+            Console.WriteLine(e);
         }
     }
 }
