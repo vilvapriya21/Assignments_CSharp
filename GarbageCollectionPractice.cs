@@ -6,7 +6,10 @@ namespace GarbageC
     {
         int a = 10;
     }
-    class Person2 { }
+    class Person2 
+    {
+        public int a;
+    }
     internal class GarbageCollectionPractice
     {
         static Person p=new Person();   
@@ -35,6 +38,7 @@ namespace GarbageC
 
             //Console.WriteLine($"p Gen after GC: {GC.GetGeneration(p)}"); // Gen 1 or 2
             //Console.WriteLine($"p1 Gen after GC: {GC.GetGeneration(p1)}");
+            
         }
     }
 }

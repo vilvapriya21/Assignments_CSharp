@@ -23,7 +23,8 @@
             Console.WriteLine(A.a + " " + obj2.count);
             A obj3=new A();
             Console.WriteLine(A.a+" "+obj3.count);
-
+            A obj4 = new A();
+            Console.WriteLine(A.a + " " + obj4.count);
         }
     }
 }

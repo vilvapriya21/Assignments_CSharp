@@ -20,7 +20,7 @@ namespace Assignment
             {
                 for (int i = 0; i < input.Length - 3; i++)
                 {
-                    int digit1 = input[i] - '0';
+                    int digit1 = input[i] - 48;
                     int digit2 = input[i + 1] - '0';
                     int digit3 = input[i + 2] - '0';
                     int digit4 = input[i + 3] - '0';

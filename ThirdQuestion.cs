@@ -80,7 +80,7 @@ namespace Assignment
             float number2 = 1.1f;
 
             float addedBinary = AddFloats(number1, number2);
-            Console.WriteLine(addedBinary); // Should print ~6.85
+            Console.WriteLine(addedBinary); 
         }
     }
 }

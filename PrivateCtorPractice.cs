@@ -33,7 +33,7 @@ namespace Assignment
         {
             Employee e=Employee.AddEmployee(11, "abcde");
             Console.WriteLine(e);
-            Employee e1 = Employee.AddEmployee(11, "abcde");
+            Employee e1 = Employee.AddEmployee(31, "vilva");
             Console.WriteLine(Employee.EmployeeCount());
         }
     }
