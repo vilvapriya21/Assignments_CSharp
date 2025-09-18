@@ -4,27 +4,27 @@ namespace Assignment
 {
     internal class Employee
     {
-        private static int employeeCount;
-        int id;
-        string name;
-        Employee(int id,string name)
+        private static int _employeeCount;
+        private int _id;
+        private string _name;
+        private Employee(int id,string name)
         {
-            this.id = id;
-            this.name = name;
+            this._id = id;
+            this._name = name;
         }
         public static Employee AddEmployee(int id,string name)
         {
-            employeeCount++;
+            _employeeCount++;
             Employee e=new Employee(id, name);
             return e;
         }
         public override string ToString()
         {
-            return $"Employee ID: {id}, Name: {name}";
+            return $"Employee ID: {_id}, Name: {_name}";
         }
         public static int EmployeeCount()
         {
-            return employeeCount;
+            return _employeeCount;
         }
     }
     class MyClass
